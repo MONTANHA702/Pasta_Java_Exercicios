@@ -1,4 +1,4 @@
-package java.basico;
+package exercicios;
 
 import java.util.Locale;
 import java.util.Scanner;

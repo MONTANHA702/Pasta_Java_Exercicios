@@ -1,4 +1,4 @@
-package exercicios;
+package exercicios.basicos;
 
 import java.util.Arrays;
 import java.util.Locale;

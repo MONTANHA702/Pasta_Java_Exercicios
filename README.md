@@ -1,40 +1,14 @@
-# Pasta_Java
+# 📘 Apostila Java — Fundamentos
 
-Repositório de estudos e exercícios de Java, desenvolvido durante o aprendizado da linguagem seguindo a metodologia do curso DevSuperior (Nélio Alves), Loiane e outros.
+Guia de referência com as principais sintaxes de Java estudadas na prática: variáveis, Scanner, printf, operadores, condicionais, loops, Strings, arrays, matrizes, exceções, TimeUnit e datas — com dicas profissionais e insights ao longo do material.
 
-## 🎯 Objetivo
+Baseado nos exercícios do repositório, seguindo a metodologia DevSuperior (Nélio Alves).
 
-Consolidar os fundamentos de Java (sintaxe, estruturas de dados, POO e Collections) como parte da preparação para atuação como consultor PJ no mercado bancário/corporativo.
+## 📂 Formatos
 
-## 🛠️ Tecnologias
 
-- **Java** (JDK 25 - Zulu)
-- **IntelliJ IDEA**
-
-## 📁 Organização
-
-Os exercícios estão organizados em pacotes por tópico, com uma classe por exercício:
-
-```
-basico/
-├── Ex1MediaDoisNumeros.java
-├── Ex2...
-└── ...
-```
-
-## 🚀 Como executar
-
-Cada exercício possui seu próprio método `main` e pode ser executado individualmente pela IDE ou via linha de comando:
-
-```bash
-javac -d out src/basico/NomeDoArquivo.java
-java -cp out basico.NomeDoArquivo
-```
-
-## 📌 Status
-
-Em andamento — repositório atualizado conforme avanço nos estudos.
+- [`Apostila_Java_Fundamentos.pdf`](Apostila_Java_Fundamentos.pdf) — versão para download/impressão
 
 ---
 
-Desenvolvido por [Jader Silva](https://github.com/MONTANHA702) | [LinkedIn](https://linkedin.com/in/jaderssantos/)
+**Jader Silva** · [GitHub](https://github.com/MONTANHA702) · [LinkedIn](https://linkedin.com/in/jaderssantos/)

@@ -1,7 +1,7 @@
 package exercicios.basicos;
 
 
-public class Ex9Tabuada {
+public class Ex09Tabuada {
     public static void main(String[] args) {
         //Tabuada de 7
 

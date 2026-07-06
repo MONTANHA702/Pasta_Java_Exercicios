@@ -2,7 +2,7 @@ package exercicios.basicos;
 
 import java.util.Scanner;
 
-public class Ex7ContandoVogaisEConsoantes {
+public class Ex07ContandoVogaisEConsoantes {
     public static void main(String[] args) {
 
         //Contando vogais e consoantes

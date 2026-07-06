@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Ex4AumentandoPossibilidadeMediasArray {
+public class Ex04AumentandoPossibilidadeMediasArray {
     public static void main(String[] args) {
         //Escalando a quantidade de notas
 

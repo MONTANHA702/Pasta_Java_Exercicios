@@ -2,7 +2,7 @@ package exercicios.basicos;
 
 import java.util.Scanner;
 
-public class Ex8ValidadorSenha {
+public class Ex08ValidadorSenha {
     public static void main(String[] args) {
         //validar senha
         //Pelo menos 8 caracteres

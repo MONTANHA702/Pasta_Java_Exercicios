@@ -3,7 +3,7 @@ package exercicios.basicos;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Ex5CelsiusFahrenheit {
+public class Ex05CelsiusFahrenheit {
     public static void main(String[] args) {
         //Conversão para grau Celsius e Fahrenheit
 

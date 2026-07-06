@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Ex3MediaQuatroValoresArray {
+public class Ex03MediaQuatroValoresArray {
     public static void main(String[] args) {
         //Usando Array
 

@@ -2,7 +2,7 @@ package exercicios.basicos;
 
 import java.util.Scanner;
 
-public class Ex6VogalOuConsoante {
+public class Ex06VogalOuConsoante {
     public static void main(String[] args) {
 
         //Vogal ou Consoante

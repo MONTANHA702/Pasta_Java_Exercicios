@@ -1,6 +1,6 @@
 # Pasta_Java_Exercicios
 
-Repositório de estudos e exercícios de Java, desenvolvido durante o aprendizado da linguagem seguindo a metodologia do curso DevSuperior (Nélio Alves).
+Repositório de exercícios de Java, desenvolvido durante o aprendizado da linguagem seguindo a metodologia do curso DevSuperior (Nélio Alves).
 
 ## 🎯 Objetivo
 

@@ -2,7 +2,7 @@ package exercicios.matriz;
 
 import java.util.Scanner;
 
-public class EX07JogoDaVelha {
+public class Ex07JogoDaVelha {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);

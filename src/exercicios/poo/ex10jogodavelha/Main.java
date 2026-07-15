@@ -10,7 +10,7 @@ public class Main {
         jogo.preencherTabuleiro();
         int contador = 0;
 
-        while (contador < 9 && !jogo.temVencedor()) {
+        while (contador < 9 && !jogo.temVencedor()) { //são 9 jogadas ao todo
             char jogador = (contador%2 == 0) ? 'X' : 'O';
             jogo.mostrarTabuleiro();
             System.out.printf("=== JOGADOR %c ===%n", jogador);

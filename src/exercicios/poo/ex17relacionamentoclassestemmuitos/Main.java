@@ -30,7 +30,7 @@ public class Main {
         System.out.println(contato.getNome());
 
         if (contato != null && contato.getTelefones() != null) {
-            for (Telefone t : telefones) {
+            for (Telefone t : contato.getTelefones()) {
                 System.out.println(t.getDdd() + " " + t.getNumero());
             }
 

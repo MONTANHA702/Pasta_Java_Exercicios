@@ -1,4 +1,4 @@
-public class Concatenacao {
+public class Ex01Concatenacao {
     public static void main(String[] args) {
 
         String curso = "Curso ";

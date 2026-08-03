@@ -1,4 +1,4 @@
-public class Construtores {
+public class Ex00Construtores {
     public static void main(String[] args) {
 
         String vazia = new String(); //""

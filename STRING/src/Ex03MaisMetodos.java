@@ -14,8 +14,8 @@ public class Ex03MaisMetodos {
 
         //.endsWith() e .startsWith()
         String banana = "banana";
-        System.out.println(banana.endsWith("ana"));
-        System.out.println(banana.startsWith("ban"));
+        System.out.println(banana.endsWith("ana"));//true
+        System.out.println(banana.startsWith("ban"));//true
 
         //.compareTo(): tendo a e b, retorna -1 se a>b, 0 se a==b e 1 se a<b usado em Arraylist
 

@@ -8,7 +8,7 @@ public class ClasseDate {
         System.out.println(data);
         System.out.println(data.getTime());
 
-        //boa parte dos métods da classe Date estão deprecados
+        //boa parte dos métodos da classe Date estão deprecados
         //usa-se ainda para banco de dados
     }
 }

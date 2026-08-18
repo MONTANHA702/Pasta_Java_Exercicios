@@ -5,6 +5,8 @@ public class Ex01ImprimindoCartao {
 
         System.out.println("Cartela da Mega-Sena...\n");
 
+
+
         int totalNumeros = 60;
         int numeroPorLinha = 10;
 

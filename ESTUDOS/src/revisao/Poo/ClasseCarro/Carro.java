@@ -7,4 +7,8 @@ public class Carro {
     String cor;
     int anoFabricacao;
 
+    //COMPOSIÇÃO do tipo TEM UM
+    Pessoa proprietario;
+
+
 }

@@ -1,4 +1,4 @@
-package revisao.Poo.ExemploMetodos;
+package revisao.Poo.Ex03ImplementandoLogicaMetodo;
 
 
 public class Main {
@@ -11,13 +11,14 @@ public class Main {
         meuCarro.cor = "azul";
         meuCarro.anoFabricacao = 2026;
         meuCarro.fabricante = "BMW";
-
+        meuCarro.precoCompra = 750000;
 
 
         seuCarro.modelo = "AIRCROSS";
         seuCarro.cor = "branco";
         seuCarro.anoFabricacao = 2016;
         seuCarro.fabricante = "CRITROEN";
+        seuCarro.precoCompra = 50000;
 
         meuCarro.calcularValorRevenda();
         seuCarro.calcularValorRevenda();

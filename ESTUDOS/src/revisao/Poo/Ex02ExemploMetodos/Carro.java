@@ -1,6 +1,7 @@
-package revisao.Poo.ExemploMetodos;
+package revisao.Poo.Ex02ExemploMetodos;
 
 public class Carro {
+
     String fabricante;
     String modelo;
     String cor;
@@ -11,5 +12,5 @@ public class Carro {
     void calcularValorRevenda() {
         System.out.printf("Calcular valor de revenda do %S ano %d%n", modelo, anoFabricacao);
     }
-
 }
+

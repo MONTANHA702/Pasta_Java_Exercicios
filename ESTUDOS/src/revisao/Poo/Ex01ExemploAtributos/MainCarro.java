@@ -1,4 +1,4 @@
-package revisao.Poo.ExemploAtributos;
+package revisao.Poo.Ex01ExemploAtributos;
 
 
 

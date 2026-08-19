@@ -1,4 +1,4 @@
-package revisao.Poo.ClasseCarro;
+package revisao.Poo.ExemploAtributos;
 
 public class Carro {
     //Atributos

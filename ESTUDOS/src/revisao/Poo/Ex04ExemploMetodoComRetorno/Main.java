@@ -19,12 +19,13 @@ public class Main {
         seuCarro.fabricante = "CRITROEN";
         seuCarro.precoCompra = 50000;
 
+        System.out.printf("Tempo de uso (anos): %d%n", 2026 - meuCarro.anoFabricacao);
         System.out.printf("O valor de revenda do carro %S ano %d é R$ %.2f%n",
                 meuCarro.modelo,
                 meuCarro.anoFabricacao,
                 meuCarro.calcularValorRevenda());
 
-
+        System.out.printf("Tempo de uso (anos): %d%n", 2026 - seuCarro.anoFabricacao);
         System.out.printf("O valor de revenda do carro %S ano %d é R$ %.2f%n",
                 seuCarro.modelo,
                 seuCarro.anoFabricacao,

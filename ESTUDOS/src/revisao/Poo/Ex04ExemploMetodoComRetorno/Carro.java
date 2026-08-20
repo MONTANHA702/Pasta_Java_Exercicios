@@ -1,6 +1,5 @@
 package revisao.Poo.Ex04ExemploMetodoComRetorno;
 
-import revisao.Poo.Ex03ImplementandoLogicaMetodo.Pessoa;
 
 public class Carro {
     String fabricante;
@@ -8,7 +7,7 @@ public class Carro {
     String cor;
     double precoCompra;
     int anoFabricacao;
-    Pessoa proprietario;
+
 
     //Metodo
     double calcularValorRevenda() {

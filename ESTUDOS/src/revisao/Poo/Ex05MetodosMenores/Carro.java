@@ -21,7 +21,8 @@ public class Carro {
     }
 
     double calcularIpva() {
-        if (calcularTempoDeUso() > 15) {
+        int tempoDeUso = calcularTempoDeUso();
+        if (tempoDeUso > 15) {
             return 0;
         }
         return calcularValorRevenda() * 0.03;

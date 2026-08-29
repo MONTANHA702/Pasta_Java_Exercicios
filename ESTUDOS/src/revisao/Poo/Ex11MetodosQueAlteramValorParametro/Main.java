@@ -1,4 +1,4 @@
-package revisao.Poo.MetodosQueAlteramValorParametro;
+package revisao.Poo.Ex11MetodosQueAlteramValorParametro;
 
 public class Main {
     public static void main(String[] args) {

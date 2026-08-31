@@ -8,13 +8,13 @@ public class MainCachorro {
         Cachorro cao2 = new Cachorro();
 
         cao1.idade = 10;
-        cao1.nome = "Brisa";
+        //cao1.nome = "Brisa";
         cao1.raca = "RagDoll";
         cao1.sexo = "Feminino";
 
 
         cao2.idade = 5;
-        cao2.nome = "Mel";
+        //cao2.nome = "Mel";
         cao2.raca = "Bull Terrier";
         cao2.sexo = "Feminino";
 

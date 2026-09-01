@@ -11,10 +11,10 @@ public class Main {
         System.out.println(novoCliente.rendaMensal);
 
         //atribuindo valores com wrappers
-        //novoCliente.idade = Integer.valueOf(20);
+        novoCliente.idade = 20;//versoes antigas: Integer.valueOf(20);
         novoCliente.idade = Integer.valueOf("23"); //passando uma String
         novoCliente.nome = "Joao";
-        novoCliente.rendaMensal = Double.valueOf(12_450);
+        novoCliente.rendaMensal = 12_450.0;
 
         System.out.println(novoCliente.nome);
         System.out.println(novoCliente.idade);

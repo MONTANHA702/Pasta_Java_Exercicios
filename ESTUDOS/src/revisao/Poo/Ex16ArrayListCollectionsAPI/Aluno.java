@@ -1,4 +1,4 @@
-package revisao.Poo.ExArrayListCollectionsAPI;
+package revisao.Poo.Ex16ArrayListCollectionsAPI;
 
 public class Aluno {
 

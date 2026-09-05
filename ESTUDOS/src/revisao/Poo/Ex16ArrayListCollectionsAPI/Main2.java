@@ -1,6 +1,4 @@
-package revisao.Poo.ExArrayListCollectionsAPI;
-
-import java.util.ArrayList;
+package revisao.Poo.Ex16ArrayListCollectionsAPI;
 
 public class Main2 {
     public static void main(String[] args) {

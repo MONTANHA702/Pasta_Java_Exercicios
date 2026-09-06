@@ -1,5 +1,11 @@
 package revisao.Poo.Ex19InformacaoMemoria;
-
+/*
+Para mudar a memoria Run/Debug Configuratios -> Edit Configurations
+-> Modify Options -> Add VM options.
+No campo que se cria insira:
+Alterar memoria maxima; -Xmx + quantidade de memoria que se quer;
+Alterar memoria empenhada; -Xms + quantidade de memoria que se quer;
+ */
 public class Teste {
     public static void main(String[] args) {
 

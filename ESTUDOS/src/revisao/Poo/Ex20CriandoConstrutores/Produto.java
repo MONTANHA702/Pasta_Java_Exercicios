@@ -7,8 +7,16 @@ public class Produto {
     String nome;
     int quantidadeEmEstoque;
 
+    Produto() {
+
+    }
+
     Produto(String nome) {
         this.nome = nome;
         this.quantidadeEmEstoque = QUANTIDADE_EM_ESTOQUE_INICIAL;
+    }
+    Produto(String nome, int quantidadeEmEstoque) {
+        this.nome = nome;
+        this.quantidadeEmEstoque = quantidadeEmEstoque;
     }
 }

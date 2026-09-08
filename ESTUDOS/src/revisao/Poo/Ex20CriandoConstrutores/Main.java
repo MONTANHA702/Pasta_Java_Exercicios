@@ -11,5 +11,10 @@ public class Main {
 
         System.out.println(produto2.nome);
         System.out.println(produto2.quantidadeEmEstoque);
+
+        Produto produto3 = new Produto("Guaraná", 40);
+
+        System.out.println(produto3.nome);
+        System.out.println(produto3.quantidadeEmEstoque);
     }
 }

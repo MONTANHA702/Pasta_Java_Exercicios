@@ -1,13 +1,16 @@
 package revisao.Poo.Ex20CriandoConstrutores;
 
 import java.util.Objects;
+import java.util.UUID;
 
 public class Produto {
 
     static final int QUANTIDADE_EM_ESTOQUE_INICIAL = 100;
 
+    final String codigo;
     String nome;
     int quantidadeEmEstoque;
+
 
     //é uma boa prática validar os construtores, da mesma forma que validamos o métodos
 
@@ -30,7 +33,6 @@ public class Produto {
 */
 
     //encadeamento de chamadas de construtores
-
     Produto() {
         this("Sem nome");//chama o construtor de baixo, só que no nome fica sem nome.
 
@@ -46,7 +48,6 @@ public class Produto {
         }
         this.nome = nome;
         this.quantidadeEmEstoque = quantidadeEmEstoque;
+        this.codigo = UUID.randomUUID().toString();//gera códigos aleatorios para cada produto instanciado
     }
-
-
 }

@@ -1,0 +1,14 @@
+package revisao.poo.ex01exemploatributos;
+
+public class Carro {
+    //Atributos
+    String fabricante;
+    String modelo;
+    String cor;
+    int anoFabricacao;
+
+    //COMPOSIÇÃO do tipo TEM UM
+    Pessoa proprietario;
+
+
+}

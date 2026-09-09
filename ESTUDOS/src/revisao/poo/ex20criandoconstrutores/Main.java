@@ -1,0 +1,24 @@
+package revisao.poo.ex20criandoconstrutores;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Produto produto1 = new Produto("Arroz");//esse vem com a constante implícita
+        Produto produto2 = new Produto("Feijão", 200);
+
+
+        System.out.println(produto1.nome);
+        System.out.println(produto1.quantidadeEmEstoque);
+        System.out.println(produto1.codigo);
+
+        System.out.println(produto2.nome);
+        System.out.println(produto2.quantidadeEmEstoque);
+        System.out.println(produto2.codigo);
+
+        Produto produto3 = new Produto();
+
+        System.out.println(produto3.nome);
+        System.out.println(produto3.quantidadeEmEstoque);
+        System.out.println(produto3.codigo);
+    }
+}

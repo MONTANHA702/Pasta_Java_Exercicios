@@ -17,8 +17,11 @@ public class Main {
         contaAluguel.pagar();
         imprimirConta(contaAluguel);
 
+        //contaAluguel.pagar();
+
         contaAluguel.cancelarPagamento();
         imprimirConta(contaAluguel);
+        //contaAluguel.cancelarPagamento();
 
     }
 

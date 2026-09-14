@@ -1,11 +1,14 @@
-package revisao.poo.ex23heranca.semheranca;
+package revisao.poo.ex23heranca.heranca4;
 
-public class Conta {
+public class ContaInvestimento {
 
     private Titular titular;
     private int agencia;
     private int numero;
     private double saldo;
+
+    private double valorTotalRendimentos;
+
 
     public Titular getTitular() {
         return titular;
@@ -35,18 +38,29 @@ public class Conta {
         return saldo;
     }
 
+    public double getValorTotalRendimentos() {
+        return valorTotalRendimentos;
+    }
+
+
+    public void creditarRendimentos(double percentualJuros) {
+        double valorRendimentos = getSaldo() * percentualJuros / 100;
+        this.valorTotalRendimentos += valorRendimentos;
+        depositar(valorRendimentos);
+    }
+
     public void sacar(double valorSaque) {
-        if(valorSaque <= 0) {
+        if (valorSaque <= 0) {
             throw new IllegalArgumentException("Valor do saque deve ser maior que 0");
         }
-        if(saldo < valorSaque) {
+        if (getSaldo() < valorSaque) {
             throw new IllegalArgumentException("Saldo insuficiente para saque");
         }
         saldo -= valorSaque;
     }
 
     public void depositar(double valorDeposito) {
-        if(valorDeposito <= 0) {
+        if (valorDeposito <= 0) {
             throw new IllegalArgumentException("Valor do depósito deve ser maior que 0");
         }
         saldo += valorDeposito;
@@ -61,4 +75,5 @@ public class Conta {
         System.out.printf("Saldo: R$ %.2f%n", getSaldo());
         System.out.println("====================");
     }
+
 }

@@ -1,4 +1,4 @@
-package revisao.poo.ex23heranca.semheranca;
+package revisao.poo.ex23heranca.heranca1;
 
 public class Main {
     public static void main(String[] args) {

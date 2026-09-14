@@ -1,4 +1,4 @@
-package revisao.poo.ex23heranca.modelando;
+package revisao.poo.ex23heranca.heranca3;
 
 import java.util.Objects;
 

@@ -1,5 +1,7 @@
-package revisao.poo.ex23heranca.modelando;
-
+package revisao.poo.ex23heranca.heranca2;
+//verifique que o código ficou muito frágil
+//a classe realiza muitas coisas e dependendo fica ociosa
+//mas consumindo muita memória
 public class Conta {
 
     public static final int NORMAL = 0;
@@ -10,7 +12,7 @@ public class Conta {
     private int agencia;
     private int numero;
     private double saldo;
-    private int tipoConta = NORMAL;
+    private int tipoConta = NORMAL;//TAG não é uma boa prática
 
     //conta investimento
     private double valorTotalRendimentos;

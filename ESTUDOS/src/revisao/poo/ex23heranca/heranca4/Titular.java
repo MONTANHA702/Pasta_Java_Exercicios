@@ -1,4 +1,4 @@
-package revisao.poo.ex23heranca.semheranca;
+package revisao.poo.ex23heranca.heranca4;
 
 import java.util.Objects;
 

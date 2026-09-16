@@ -1,52 +1,13 @@
 package revisao.poo.ex23heranca.heranca4;
 
-public class ContaEspecial {
+public class ContaEspecial extends ContaInvestimento {
 
-    private Titular titular;
-    private int agencia;
-    private int numero;
-    private double saldo;
-
-    private double valorTotalRendimentos;
     private double tarifaMensal;
     private double limiteChequeEspecial;
 
 
-    public Titular getTitular() {
-        return titular;
-    }
-
-    public void setTitular(Titular titular) {
-        this.titular = titular;
-    }
-
-    public int getAgencia() {
-        return agencia;
-    }
-
-    public void setAgencia(int agencia) {
-        this.agencia = agencia;
-    }
-
-    public int getNumero() {
-        return numero;
-    }
-
-    public void setNumero(int numero) {
-        this.numero = numero;
-    }
-
-    public double getSaldo() {
-        return saldo;
-    }
-
     public double getSaldoDisponivel() {
         return getSaldo() + getLimiteChequeEspecial();
-    }
-
-
-    public double getValorTotalRendimentos() {
-        return valorTotalRendimentos;
     }
 
     public double getTarifaMensal() {
@@ -65,37 +26,16 @@ public class ContaEspecial {
         this.limiteChequeEspecial = limiteChequeEspecial;
     }
 
-    public void creditarRendimentos(double percentualJuros) {
-        double valorRendimentos = getSaldo() * percentualJuros / 100;
-        this.valorTotalRendimentos += valorRendimentos;
-        depositar(valorRendimentos);
 
-    }
-
-    public void sacar(double valorSaque) {
-        if (valorSaque <= 0) {
-            throw new IllegalArgumentException("Valor do saque deve ser maior que 0");
-        }
+    protected void validarSaldoParaSaque(double valorSaque) {
         if (getSaldoDisponivel() < valorSaque) {
             throw new IllegalArgumentException("Saldo insuficiente para saque");
         }
-        saldo -= valorSaque;
     }
 
-    public void depositar(double valorDeposito) {
-        if (valorDeposito <= 0) {
-            throw new IllegalArgumentException("Valor do depósito deve ser maior que 0");
-        }
-        saldo += valorDeposito;
-    }
-
+    @Override
     public void imprimirDemonstrativo() {
-        System.out.println();
-        System.out.println("===DEMONSTRATIVO===");
-        System.out.printf("Agência: %d%n", getAgencia());
-        System.out.printf("Conta: %d%n", getNumero());
-        System.out.printf("Titular: %s%n", getTitular().getNome());
-        System.out.printf("Saldo: R$ %.2f%n", getSaldo());
+        super.imprimirDemonstrativo();
         System.out.printf("Saldo disponível: R$ %.2f%n", getSaldoDisponivel());
         System.out.println("====================");
     }

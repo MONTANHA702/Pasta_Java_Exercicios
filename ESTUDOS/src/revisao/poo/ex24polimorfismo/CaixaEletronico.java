@@ -29,18 +29,24 @@ public class CaixaEletronico {
         //DOWNCASTING
         //não é boa prática, pois se pegar uma classe que não seja filha
         //dá erro ClassCastException
-        ContaInvestimento contaInvestimento = (ContaInvestimento) conta;
+        //então coloca-se um controle com instanceof
 
-        if(contaInvestimento.getValorTotalRendimentos() > 0) {
+
+        if (conta instanceof ContaInvestimento contaInvestimento
+                && contaInvestimento.getValorTotalRendimentos() > 0) {
+            //declarando a variável contaInvestimento elimina a linha de baixo
+            //ContaInvestimento contaInvestimento = (ContaInvestimento) conta;
+
             System.out.println("Impressão do demonstrativo é grátis.");
         } else {
-            System.out.printf("Custo da impressão: R$ %.2f%n", TARIFA_IMPRESSAO_DEMONSTRATIVO);
-            conta.sacar(TARIFA_IMPRESSAO_DEMONSTRATIVO);
+            debitarTarifaImpressaoDemonstrativo(conta);
         }
 
         conta.imprimirDemonstrativo();
     }
 
-
-
+    private static void debitarTarifaImpressaoDemonstrativo(Conta conta) {
+        System.out.printf("Custo da impressão: R$ %.2f%n", TARIFA_IMPRESSAO_DEMONSTRATIVO);
+        conta.sacar(TARIFA_IMPRESSAO_DEMONSTRATIVO);
+    }
 }

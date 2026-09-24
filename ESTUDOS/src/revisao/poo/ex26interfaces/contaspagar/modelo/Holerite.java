@@ -1,0 +1,52 @@
+package revisao.poo.ex26interfaces.contaspagar.modelo;
+
+import revisao.poo.ex26interfaces.contaspagar.pagamento.Beneficiario;
+import revisao.poo.ex26interfaces.contaspagar.pagamento.DocumentoPagavel;
+
+public class Holerite implements DocumentoPagavel {
+
+    private Beneficiario funcionario;
+    private double valorHora;
+    private int quantidadeHoras;
+
+    public Holerite(Beneficiario funcionario, double valorHora, int quantidadeHoras) {
+        this.funcionario = funcionario;
+        this.valorHora = valorHora;
+        this.quantidadeHoras = quantidadeHoras;
+    }
+
+    public void setFuncionario(Beneficiario funcionario) {
+        this.funcionario = funcionario;
+    }
+
+    public Beneficiario getFuncionario() {
+        return funcionario;
+    }
+
+    public double getValorHora() {
+        return valorHora;
+    }
+
+    public void setValorHora(double valorHora) {
+        this.valorHora = valorHora;
+    }
+
+    public int getQuantidadeHoras() {
+        return quantidadeHoras;
+    }
+
+    public void setQuantidadeHoras(int quantidadeHoras) {
+        this.quantidadeHoras = quantidadeHoras;
+    }
+
+
+    @Override
+    public double getValorTotal() {
+        return getValorHora() * getQuantidadeHoras();
+    }
+
+    @Override
+    public Beneficiario getBeneficiario() {
+        return getFuncionario();
+    }
+}

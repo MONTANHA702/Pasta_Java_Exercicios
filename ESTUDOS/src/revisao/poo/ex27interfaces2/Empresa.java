@@ -20,8 +20,4 @@ public abstract class Empresa {
     }
 
 
-
-    public double calcularJuros(double valorSolicitado) {
-        return 0;
-    }
 }

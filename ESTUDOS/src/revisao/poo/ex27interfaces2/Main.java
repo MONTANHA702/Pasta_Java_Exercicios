@@ -12,5 +12,7 @@ public class Main {
         servicoFinanciamento.solicitarFinanciamento(industria, 500_000);
         servicoFinanciamento.solicitarFinanciamento(funcionario, 50_000);
 
+        System.out.printf("Juros baixo risoc: %.1f%%%n", ClienteFinanciavel.JUROS_BAIXO_RISCO);
+
     }
 }

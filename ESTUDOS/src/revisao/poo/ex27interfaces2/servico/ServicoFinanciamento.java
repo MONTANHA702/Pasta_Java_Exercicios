@@ -1,4 +1,6 @@
-package revisao.poo.ex27interfaces2;
+package revisao.poo.ex27interfaces2.servico;
+
+import revisao.poo.ex27interfaces2.ClienteFinanciavel;
 
 public class ServicoFinanciamento {
 

@@ -1,6 +1,6 @@
 package revisao.poo.ex27interfaces2;
 
-public class Funcionario implements ClienteFinanciavel{
+public class Funcionario implements ClienteFinanciavel, PessoaBonificavel {
 
     public static final int FATOR_AJUSTE_CONCESSAO_LIMITE = 5;
 
@@ -23,5 +23,15 @@ public class Funcionario implements ClienteFinanciavel{
     @Override
     public double calcularLimiteAprovado() {
         return getSalarioMensal() * FATOR_AJUSTE_CONCESSAO_LIMITE;
+    }
+
+    @Override
+    public double calcularBonus(double percentualMetaAlcancada) {
+        return getSalarioMensal() * percentualMetaAlcancada  / 100;
+    }
+
+    @Override
+    public String toString() {
+        return nome;
     }
 }

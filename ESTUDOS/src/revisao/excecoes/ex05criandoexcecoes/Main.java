@@ -21,7 +21,7 @@ public class Main {
 
                 break;
 
-            } catch (IllegalArgumentException e) {
+            } catch (IllegalArgumentException | ProdutoSemEstoqueException e) {
                 //e.printStackTrace(); se quiser visualizar a pilha
                 System.out.println("Erro na compra: " + e.getMessage());
 
@@ -29,16 +29,17 @@ public class Main {
 
                 System.out.println("Erro na compra: " + e.getMessage());
                 System.out.println("Deseja ativar o produto? true/false");
-                if(sc.nextBoolean()) {
+                if (sc.nextBoolean()) {
                     produto.ativar();
                     System.out.println("Ok. Produto ativado com sucesso!");
                 } else {
                     System.out.println("Ok. Compra não realizada.");
                     break;
                 }
-            } catch (ProdutoSemEstoqueException e) {
-                System.out.println("Erro na compra: " + e.getMessage());
             }
+//            } catch (ProdutoSemEstoqueException e) {
+//                System.out.println("Erro na compra: " + e.getMessage());
+//            }
 
 
         } while (true);

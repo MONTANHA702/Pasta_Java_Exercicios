@@ -32,9 +32,9 @@ public class Main {
                 //e.printStackTrace(); se quiser visualizar a pilha
                 System.out.println("Erro na compra: " + e.getMessage());
 
-            } catch (IllegalStateException exception) {
+            } catch (IllegalStateException e) {
 
-                System.out.println("Erro na compra: " + exception.getMessage());
+                System.out.println("Erro na compra: " + e.getMessage());
                 System.out.println("Deseja ativar o produto? true/false");
                 if(sc.nextBoolean()) {
                     produto.ativar();

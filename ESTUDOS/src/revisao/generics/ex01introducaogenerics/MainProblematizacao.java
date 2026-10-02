@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class MainProblematizacao {
     public static void main(String[] args) {
 
-        //Note que é um ArrayList cry, sem<>
+        //Note que é um ArrayList cru, sem<>
         //então aceita qualquer tipo dentro dele
         ArrayList clientes = new ArrayList();
         clientes.add(new Cliente("Supermercado Joia", 1_000_000));//Cliente

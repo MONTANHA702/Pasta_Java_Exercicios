@@ -28,12 +28,43 @@ public class Main {
         ArrayList<Hotel> hoteis = cadastroHotel.obterTodos();
         imprimir(hoteis);
 
-        System.out.println("==========");
+        separar();
 
         //encontrar objetos na lista
         //System.out.println(hoteis.indexOf(new Hotel("Eno Hotel", "Porto de Galinhas", 0)));
         int indice = hoteis.indexOf(hotel3);
         System.out.println(indice);
+
+        separar();
+        System.out.println("Inserindo na posição desejada");
+        //.add sempre adiciona objeto no final
+        //para colocar em outras posicoes usa-se parametros no .add
+        Hotel hotel7 = new Hotel("Hotel 7", "Teste", 0);
+        cadastroHotel.adicionar(hotel7);
+        hoteis.add(3, hotel7);
+        imprimir(hoteis);
+
+       separar();
+        System.out.println("Substituindo objeto com .set");
+
+        Hotel hotel8 = new Hotel("Hotel 8", "Teste", 1);
+        cadastroHotel.adicionar(hotel8);
+        hoteis.set(3, hotel8);
+        imprimir(hoteis);
+
+        separar();
+        System.out.println("Retirando objeto com .remove");
+        cadastroHotel.removerPorCidades("Teste");
+        imprimir(hoteis);
+
+        separar();
+        System.out.println("Apagar lista");
+        hoteis.clear();
+        //hoteis.removeAll(hoteis);//apaga todos os elementos de uma colecao informada
+        imprimir(hoteis);
+
+
+
 
     }
 
@@ -44,6 +75,10 @@ public class Main {
                     hotel.getNome(), hotel.getCidade(), hotel.getPrecoDiaria());
 
         }
+    }
+
+    private static void separar() {
+        System.out.println("=============");
     }
 
 }

@@ -15,4 +15,14 @@ public class CadastroHotel {
     public ArrayList<Hotel> obterTodos() {
         return hoteis;
     }
+
+    public void removerPorCidades(String nome) {
+        for (int i = 0; i < hoteis.size(); i++) {
+            Hotel hotel = hoteis.get(i);
+            if (hotel.getCidade().equals(nome)) {
+                hoteis.remove(i);
+                i--;
+            }
+        }
+    }
 }

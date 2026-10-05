@@ -2,6 +2,7 @@ package revisao.collections.ex04percorrendolistacomiterador;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.ListIterator;
 
 public class Main {
     public static void main(String[] args) {
@@ -19,10 +20,23 @@ public class Main {
 
     }
 
+    //usando iterator
+//    private static void imprimirHotel(ArrayList<Hotel> hoteis) {
+//        Iterator<Hotel> hotelIterator = hoteis.iterator();
+//        while (hotelIterator.hasNext()) {//hasNext verifica se tem próximo
+//            Hotel hotel = hotelIterator.next();//next mostra
+//            System.out.printf("%S (%s) -> R$ %.2f%n",
+//                    hotel.getNome(), hotel.getCidade(), hotel.getPrecoDiaria());
+//        }
+//    }
+
+    //usando listIterator
+    //mais avançado que o iterator, permite que se percorra nos dois sentidos
+    //iterando para trás não pode começar do index 0
     private static void imprimirHotel(ArrayList<Hotel> hoteis) {
-        Iterator<Hotel> HotelIterator = hoteis.iterator();
-        while (HotelIterator.hasNext()) {//hasNext verifica se tem próximo
-            Hotel hotel = HotelIterator.next();//next mostra
+        ListIterator<Hotel> hotelIterator = hoteis.listIterator(hoteis.size());//começa do final
+        while (hotelIterator.hasPrevious()) {//hasPrevious verifica se tem anterior
+            Hotel hotel = hotelIterator.previous();//previous mostra
             System.out.printf("%S (%s) -> R$ %.2f%n",
                     hotel.getNome(), hotel.getCidade(), hotel.getPrecoDiaria());
         }

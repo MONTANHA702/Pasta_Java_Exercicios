@@ -33,10 +33,17 @@ public class Main {
     //usando listIterator
     //mais avançado que o iterator, permite que se percorra nos dois sentidos
     //iterando para trás não pode começar do index 0
+//    private static void imprimirHotel(ArrayList<Hotel> hoteis) {
+//        ListIterator<Hotel> hotelIterator = hoteis.listIterator(hoteis.size());//começa do final
+//        while (hotelIterator.hasPrevious()) {//hasPrevious verifica se tem anterior
+//            Hotel hotel = hotelIterator.previous();//previous mostra
+//            System.out.printf("%S (%s) -> R$ %.2f%n",
+//                    hotel.getNome(), hotel.getCidade(), hotel.getPrecoDiaria());
+//        }
+
+    //usando o enhanced for
     private static void imprimirHotel(ArrayList<Hotel> hoteis) {
-        ListIterator<Hotel> hotelIterator = hoteis.listIterator(hoteis.size());//começa do final
-        while (hotelIterator.hasPrevious()) {//hasPrevious verifica se tem anterior
-            Hotel hotel = hotelIterator.previous();//previous mostra
+        for (Hotel hotel : hoteis) {
             System.out.printf("%S (%s) -> R$ %.2f%n",
                     hotel.getNome(), hotel.getCidade(), hotel.getPrecoDiaria());
         }

@@ -1,21 +1,24 @@
-package revisao.collections.ex04percorrendolistacomiterador;
+package revisao.collections.arraylist.ex04percorrendolistacomiterador;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.ListIterator;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
 
         CadastroHotel cadastro = new CadastroHotel();
         cadastro.adicionar("Jaguaribe Lodge", "Fortim/CE", 1300);
-        cadastro.adicionar("Vila Selvagem", "Fortim/CE", 1400);
+        cadastro.adicionar("Vila Selvagem", "Fortim/CE", 1300);
         cadastro.adicionar("Hotel Fazenda Dona Carolina", "Itatiba/SP", 2200);
         cadastro.adicionar("Tivoli Ecoresort", "Praia do Forte/BA", 2000);
-        cadastro.adicionar("Mercure", "Uberlândia/MG", 400);
+        cadastro.adicionar("Mercure", "Uberlândia/MG", 1300);
 
 
-        ArrayList<Hotel> hoteis = cadastro.obterTodos();
+//        Hotel[] lista = cadastro.obterTodosComoArray();
+//        System.out.println(Arrays.toString(lista));
+
+        List<Hotel> hoteis = cadastro.obterTodos();
+        //cadastro.ordenar();
+        cadastro.ordenarPorPreco();
         imprimirHotel(hoteis);
 
     }
@@ -42,7 +45,7 @@ public class Main {
 //        }
 
     //usando o enhanced for
-    private static void imprimirHotel(ArrayList<Hotel> hoteis) {
+    private static void imprimirHotel(List<Hotel> hoteis) {
         for (Hotel hotel : hoteis) {
             System.out.printf("%S (%s) -> R$ %.2f%n",
                     hotel.getNome(), hotel.getCidade(), hotel.getPrecoDiaria());

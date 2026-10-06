@@ -1,8 +1,8 @@
-package revisao.collections.ex04percorrendolistacomiterador;
+package revisao.collections.arraylist.ex04percorrendolistacomiterador;
 
 import java.util.Objects;
 
-public class Hotel {
+public class Hotel implements Comparable<Hotel> {
 
     private String nome;
     private String cidade;
@@ -54,11 +54,18 @@ public class Hotel {
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         Hotel hotel = (Hotel) o;
-        return Double.compare(precoDiaria, hotel.precoDiaria) == 0 && Objects.equals(nome, hotel.nome) && Objects.equals(cidade, hotel.cidade);
+        return Objects.equals(nome, hotel.nome);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(nome, cidade, precoDiaria);
+        return Objects.hashCode(nome);
+    }
+
+    //boa prática reza que a comparação deve seguir metodo equals
+    //nesse caso o equals faz comparacao pelo nome
+    @Override
+    public int compareTo(Hotel o) {
+        return getNome().compareTo(o.getNome());
     }
 }

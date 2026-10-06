@@ -1,4 +1,4 @@
-package revisao.collections.arraylist.ex05ordenandolistas;
+package revisao.collections.listas.ex05ordenandolistas;
 
 import java.util.ArrayList;
 import java.util.Collections;

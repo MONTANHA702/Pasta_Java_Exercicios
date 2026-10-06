@@ -1,4 +1,4 @@
-package revisao.collections.arraylist.ex01usandoarraylist;
+package revisao.collections.listas.ex01usandoarraylist;
 //objetivo é usar um arraylist cru para fazer uma lista
 //verifique que sempre cai na situação de casting
 import java.util.ArrayList;

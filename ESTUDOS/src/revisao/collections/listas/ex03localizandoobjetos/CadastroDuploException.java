@@ -1,4 +1,4 @@
-package revisao.collections.arraylist.ex03localizandoobjetos;
+package revisao.collections.listas.ex03localizandoobjetos;
 
 public class CadastroDuploException extends RuntimeException {
 

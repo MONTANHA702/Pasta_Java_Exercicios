@@ -1,8 +1,9 @@
-package revisao.collections.arraylist.ex03localizandoobjetos;
+package revisao.collections.listas.ex04percorrendolistacomiterador;
 
 import java.util.Objects;
 
-public class Hotel {
+public class Hotel implements Comparable<Hotel> {
+
     private String nome;
     private String cidade;
     private double precoDiaria;
@@ -35,7 +36,7 @@ public class Hotel {
 
     public void setPrecoDiaria(double precoDiaria) {
         if (precoDiaria <= 0) {
-            throw new IllegalArgumentException("Preço da diária não pode ser negativo");
+            throw new IllegalArgumentException("Preço da diária não pode ser negativo.");
         }
         this.precoDiaria = precoDiaria;
     }
@@ -59,5 +60,12 @@ public class Hotel {
     @Override
     public int hashCode() {
         return Objects.hashCode(nome);
+    }
+
+    //boa prática reza que a comparação deve seguir metodo equals
+    //nesse caso o equals faz comparacao pelo nome
+    @Override
+    public int compareTo(Hotel o) {
+        return getNome().compareTo(o.getNome());
     }
 }

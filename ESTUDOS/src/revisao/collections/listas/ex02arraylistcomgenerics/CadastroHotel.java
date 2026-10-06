@@ -1,4 +1,4 @@
-package revisao.collections.arraylist.ex02arraylistcomgenerics;
+package revisao.collections.listas.ex02arraylistcomgenerics;
 
 import java.util.ArrayList;
 

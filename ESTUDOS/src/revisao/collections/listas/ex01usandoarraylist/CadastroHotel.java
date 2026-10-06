@@ -1,4 +1,4 @@
-package revisao.collections.arraylist.ex01usandoarraylist;
+package revisao.collections.listas.ex01usandoarraylist;
 
 import java.util.ArrayList;
 

@@ -1,7 +1,6 @@
-package revisao.collections.arraylist.ex01usandoarraylist;
+package revisao.collections.listas.ex02arraylistcomgenerics;
 
 public class Hotel {
-
     private String nome;
     private String cidade;
     private double precoDiaria;

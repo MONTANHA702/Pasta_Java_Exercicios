@@ -1,4 +1,4 @@
-package revisao.collections.arraylist.ex04percorrendolistacomiterador;
+package revisao.collections.listas.ex04percorrendolistacomiterador;
 
 public class HotelJaExistenteException extends RuntimeException {
 

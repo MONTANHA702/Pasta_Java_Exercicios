@@ -1,6 +1,7 @@
 package revisao.collections.conjuntos.ex02metodohashcode;
 
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 
 public class Main {
@@ -13,14 +14,15 @@ public class Main {
         contatos.add(new Contato("Jose", "jose2email.com", 30));
         contatos.add(new Contato("João", "joao@email.com", 25));
         contatos.add(new Contato("Rosa", "rosa@email.com", 50));
-        contatos.add(null);
+        //contatos.add(null);
 
 
         //.hashCode definido na classe Contado determina que se separem os ojbetos
         //pela primeira letra do email. Dessa forma contato2 e contato3 estão no
         //mesmo compartimento
-        System.out.println(contato1.hashCode());
-        System.out.println(contato2.hashCode());
-        System.out.println(contato3.hashCode());
+        for (Contato contato : contatos) {
+            //System.out.println(Objects.hashCode(contato));//se tiver um null
+            System.out.println(contato.hashCode());
+        }
     }
 }

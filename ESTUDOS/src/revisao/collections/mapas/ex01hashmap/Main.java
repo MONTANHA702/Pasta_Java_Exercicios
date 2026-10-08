@@ -1,9 +1,6 @@
 package revisao.collections.mapas.ex01hashmap;
 
-import java.util.HashMap;
-import java.util.Hashtable;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -28,8 +25,8 @@ public class Main {
         //visualização do mapa
         //System.out.println(proprietarios);
 
-        //busca
-        //System.out.println(proprietarios.get(ford));
+        //busca só por chaves
+        System.out.println(proprietarios.get(ford));
         System.out.println(proprietarios.get(new Carro("WOR2231", "BMW X3")));
         System.out.println(proprietarios.get(new Carro("AAA2231", "Honda HR-V")));
         separador();
@@ -40,7 +37,7 @@ public class Main {
         //iterar chaves
         System.out.println("Iterar pelas chaves .keySet()");
         //.keySet() mostra uma lista de chaves da variavel proprietarios que é do tipo map
-        for(Carro carro : proprietarios.keySet()) {
+        for (Carro carro : proprietarios.keySet()) {
             System.out.println(carro);
         }
         separador();
@@ -96,6 +93,25 @@ public class Main {
                 "ao HashMap porém não aceita nem chave e nem valor nulos.");
 
         //Map<Proprietario, Carro> proprietarios = new Hashtable<>();
+        separador();
+        System.out.println("LinkedHashMap funciona igual ao hashMap, porém tem um\n" +
+                "custo maior de memória. Ele agrupa EM ORDEM de inclusão e aceita\n" +
+                "null");
+
+        //Map<Proprietario, Carro> proprietarios = new LinkedHashMap<>();
+
+        separador();
+        System.out.println("O TreeMap não possui árvore de espalhamento, ele agrupa\n" +
+                "pela ordem natural ou por comparator. Para usar é necessário que a\n" +
+                "classe implemente Comparable ou se use uma classe Coparator, igual\n" +
+                "no estudo dos conjuntos(treeSet). Não aceita chaves null.");
+
+        //Map<Proprietario, Carro> proprietarios = new TreeMap<>();
+        //class Carro implements Comparable<Carro> - implementa o método compareTo
+
+        separador();
+        System.out.println("TreeMap é mais lento que o HashMap porém consome menos\n" +
+                "memória.");
     }
 
     private static void separador() {

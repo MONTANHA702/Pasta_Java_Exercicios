@@ -1,4 +1,4 @@
-package revisao.numeros.ex03bigdecimal;
+package revisao.numeros.ex03bigdecimal.introducao;
 
 import java.math.BigDecimal;
 

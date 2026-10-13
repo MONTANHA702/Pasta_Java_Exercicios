@@ -2,13 +2,16 @@ package revisao.numeros.ex04decimalformat;
 
 import java.math.BigDecimal;
 import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
 import java.text.NumberFormat;
 import java.util.Locale;
 
-public class Main {
+public class Formatacoes {
     public static void main(String[] args) {
 
-        //Locale.setDefault(Locale.US);
+        Locale.setDefault(Locale.US);
+        //Locale.setDefault(new Locale("pt", "BR"));
+
 
         double a = 4_142_298.4238;
         float b = 0.3f;
@@ -31,6 +34,10 @@ public class Main {
         //metodos de fábrica
         NumberFormat formatador5 = NumberFormat.getCurrencyInstance(Locale.US);
         NumberFormat formatador6 = NumberFormat.getPercentInstance();
+
+        //configurar apenas naquela formatacao sem comprometer o restante
+        DecimalFormatSymbols simbolos = new DecimalFormatSymbols(new Locale("pt", "BR"));
+        NumberFormat formatador7 = new DecimalFormat("¤ ###,##0.00", simbolos);
 
 
 
@@ -68,6 +75,11 @@ public class Main {
         System.out.println(formatador6.format(b));
         System.out.println(formatador6.format(c));
         System.out.println(formatador6.format(d));
+        separador();
+        System.out.println(formatador7.format(a));
+        System.out.println(formatador7.format(b));
+        System.out.println(formatador7.format(c));
+        System.out.println(formatador7.format(d));
 
     }
 

@@ -1,4 +1,4 @@
-package revisao.apidatetime.localdatetime;
+package revisao.apidatetime.ex04localdatetime;
 
 //tem informação de data e hora, mas não tem informação de fuso horário
 import java.time.LocalDateTime;

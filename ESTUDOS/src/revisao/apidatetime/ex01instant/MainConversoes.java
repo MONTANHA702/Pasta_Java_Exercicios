@@ -1,4 +1,4 @@
-package revisao.apidatetime.instant;
+package revisao.apidatetime.ex01instant;
 
 import java.time.Instant;
 import java.util.Calendar;

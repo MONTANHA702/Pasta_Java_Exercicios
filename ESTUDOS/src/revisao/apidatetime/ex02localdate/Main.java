@@ -1,4 +1,4 @@
-package revisao.apidatetime.localdate;
+package revisao.apidatetime.ex02localdate;
 
 import java.time.LocalDate;
 

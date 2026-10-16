@@ -1,4 +1,4 @@
-package revisao.datetime.instant;
+package revisao.apidatetime.instant;
 
 //API a partir do Java 8
 //armazena o timestemp que armazena o tempo em milisegundos desde 0h de 0101/1970

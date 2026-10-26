@@ -18,7 +18,7 @@ public class Main {
                 .plusMonths(1)
                 .with(TemporalAdjusters.firstInMonth(DayOfWeek.MONDAY));
 
-        System.out.println("Primeira segunda do próxomo mês: " + primeiraSegundaProximoMes);
+        System.out.println("Primeira segunda do próximo mês: " + primeiraSegundaProximoMes);
 
         System.out.println("========");
 

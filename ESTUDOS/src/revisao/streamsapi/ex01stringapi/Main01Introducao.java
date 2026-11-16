@@ -3,7 +3,7 @@ package revisao.streamsapi.ex01stringapi;
 import java.util.List;
 import java.util.stream.Stream;
 
-public class Main1Introducao {
+public class Main01Introducao {
     public static void main(String[] args) {
 
         var cadastroProduto = new CadastroProduto();

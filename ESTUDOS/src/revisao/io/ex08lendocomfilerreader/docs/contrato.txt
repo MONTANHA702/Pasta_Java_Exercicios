@@ -1,0 +1,7 @@
+Automático agora é o padrão.
+Uma verificação automatizada bloqueia as ações que identifica como arriscadas;
+nos demais casos, é possível que o Claude aja sem perguntar.
+Você pode definir uma ferramenta como “Sempre perguntar” nas configurações de
+conectores para que o Claude pergunte antes de usá-la, mesmo no modo automático.
+Você pode mudar para Manual a qualquer momento.
+Saiba mais.
